@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/static/styles/style.css" />
+</head>
+<body>
+<h1>Список кандидатов</h1>
+
+{% for key, value in candidates.items() %}
+    <p>
+    <a href="/candidates/{{key}}"> {{value}} </a>
+    </p>
+{% endfor %}
+
+</body>
+</html>
